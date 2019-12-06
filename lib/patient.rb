@@ -19,7 +19,6 @@ class Patient
  
  def appointments
    Appointment.all.select {|a| a.patient == self}
-  
 end
 
 def doctors 
