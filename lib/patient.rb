@@ -23,7 +23,7 @@ class Patient
 end
 
 def doctors 
-  self.appointments.collect{|a| a.doctor}
+  self.appointments.select{|a| a.doctor}
 end
   
 end
